@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Game Suit</title>
+  </head>
+  <body>
+    <!-- container 1 -->
+    <div id="container-1">
+      <!-- navigasi -->
+      <div class="navigasi">
+        <p>LOGO</p>
+        <input type="checkbox" id="check" name="" value="">
+        <label for="check" id="checkbutton"><i class="fa-solid fa-bars"></i></label>
+        <ul>
+          <li><a href="#container-1">HOME</a></li>
+          <li><a href="#container-2">WORK</a></li>
+          <li><a href="#container-5">CONTACT</a></li>
+          <li><a href="#container-6">ABOUT ME</a></li>
+          <li id="login"><a href="#">LOGIN</a></li>
+          <li id="signup"><a href="#">SIGN UP</a></li>
+        </ul>
+      </div>
+      <!-- end navigasi -->
+      <!-- isi -->
+      <div class="isi">
+        <h1>PLAY TRADITIONAL GAME</h1>
+        <p>Experience new traditional game play</p>
+        <button onclick="location.href='page2.html'" type="button" name="button">PLAY NOW</button>
+      </div>
+      <!-- end isi -->
+
+      <!-- bagian bawah -->
+      <div class="bawah">
+        <p>Let's Go!</p>
+        <button onclick="location.href='#container-2'" type="button" name="button"><i class="fa-solid fa-angle-down"></i></button>
+      </div>
+      <!-- end bagian bawah -->
+    </div>
+    <!-- end container 1 -->
+
+    <!-- container 2 -->
+    <div id="container-2">
+      <h2>What's so special?</h2>
+      <h1>THE GAMES</h1>
+
+      <div class="slides">
+          <img
+          src="assets/rockpaperstrategy-1600.jpg" alt="gambar game" width="800">
+        <div class="slider">
+          <input type="radio" name="tombol" value="1" checked>
+          <input type="radio" name="tombol" value="2">
+          <input type="radio" name="tombol" value="3">
+          <input type="radio" name="tombol" value="4">
+          <input type="radio" name="tombol" value="5">
+        </div>
+        <button id="kanan" type="button" name="button"><i class="fa-solid fa-caret-right"></i></button>
+        <button id="kiri" type="button" name="button"><i class="fa-solid fa-caret-left"></i></button>
+      </div>
+    </div>
+    <!-- end container 2 -->
+
+    <!-- container 3 -->
+    <div id="container-3">
+      <h2>What's so special?</h2>
+      <h1>FEATURES</h1>
+
+      <button id="satu" onclick="gantiWarna1()" type="button" name="button" style="background-color: rgba(0, 0, 0, 0)"></button>
+      <label for="satu">TRADITIONAL GAMES</label>
+        <div class="tulisan" style="display: none">
+          <p>If you miss your childhood, we provide many traditional games here</p>
+        </div>
+        <br>
+        <br>
+        <button id="dua" onclick="gantiWarna2()" type="button" name="button" style="background-color: rgba(0, 0, 0, 0)"></button>
+        <label for="dua">GAME SUIT</label>
+          <div class="tulisan" style="display: none">
+            <p>This game is the most famous traditional game in the world, besides being used to relieve boredom, this game is often also used to determine a decision.</p>
+          </div>
+          <br>
+          <br>
+        <button id="tiga" onclick="gantiWarna3()" type="button" name="button" style="background-color: rgba(0, 0, 0, 0)"></button>
+        <label for="tiga">TRIVIA</label>
+          <div class="tulisan" style="display: none">
+            <p>In most countries, this game uses rock, scissors, and paper with their respective rules, but in Indonesia, this game uses elephants, ants and humans.</p>
+          </div>
+    </div>
+    <!-- end container 3 -->
+
+    <!-- container 4 -->
+    <div id="container-4">
+      <div class="container-requirements">
+        <h1>SYSTEM REQUIREMENTS</h1>
+
+        <!-- table requirements -->
+        <table>
+          <tr>
+            <th> <span>OS:</span> <br> Windows 7 64-bit only (No OSX Support at this time)</th>
+            <th><span>PROCESSOR:</span> <br> Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</th>
+          </tr>
+          <tr>
+            <th> <span>MEMORY:</span> <br> 4 GB RAM</th>
+            <th><span>STORAGE:</span> <br> 8 GB available space</th>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th> <span>GRAPHIC:</span> <br> NVIDIA GeForce GTX 660 2GB or AMD Radeon HS 7860 2GB DiretX11 (Shader Model 5)</th>
+          </tr>
+        </table>
+        <!-- end -->
+      </div>
+    <!-- end container 4 -->
+
+    <!-- container 5 -->
+    <div id="container-5">
+      <div class="kiri">
+        <h1>TOP SCORES</h1>
+        <p>This top score from various games provided on this platform</p>
+        <button type="button" name="button"> SEE MORE</button>
+      </div>
+      <div class="kanan">
+        <div class="review1">
+          <img id="twitter" src="assets/twitter-card.png" alt="logo twitter" width="20">
+          <img id="foto" src="assets/evan-lahti.jpg" alt="foto-1" width="30">
+          <p id="nama">Evan Lathi <br> <span> PC Gamer <span></p>
+          <p id="review">"One of my gaming highlights of the year."</p>
+          <p id="date">June 18, 2021</p>
+        </div>
+        <div class="review2">
+          <img id="twitter" src="assets/twitter-card.png" alt="logo twitter" width="20">
+          <img id="foto" src="assets/jada-griffin.jpg" alt="foto-1" width="30">
+          <p id="nama">Jade Griffin <br> <span> Nerdreactor <span></p>
+          <p id="review">"The next big thing in the world of streaming and survival games"</p>
+          <p id="date">July 10, 2021</p>
+        </div>
+        <div class="review3">
+          <img id="twitter" src="assets/twitter-card.png" alt="logo twitter" width="20">
+          <img id="foto" src="assets/aaron-williams.jpg" alt="foto-1" width="30">
+          <p id="nama">Aaron Williams <br> <span> Uproxx <span></p>
+          <p id="review">"Snoop Dogg Playing The Wildly Entertaining 'SOS' is Ridiculous."</p>
+          <p id="date">December 24, 2021</p>
+        </div>
+      </div>
+    </div>
+    <!-- end container 5 -->
+
+    <!-- container 6 -->
+    <div id="container-6">
+      <img src="assets/skull.png" alt="skull" width="300">
+      <div class="container-tulisan">
+        <h2>Want to stay in <br> touch?</h2>
+        <h1>NEWSLETTER <br>SUBSCRIBE</h1>
+        <p>In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don't spam.</p>
+        <form class="form">
+          <input id="text" type="email" name="" value="" placeholder="Your Email Address..">
+          <input id="submit" type="submit" name="" value="Subscribe Now">
+        </form>
+      </div>
+      <div class="footer-atas">
+        <ul class="atas">
+          <li><a href="#">MAIN</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">GAME FEATURES</a></li>
+          <li><a href="#">SYSTEM REQUIREMENTS</a></li>
+          <li><a href="#">QUOTES</a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li ><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitch"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bawah">
+        <p>&copy; 2018 Your Games. Inc All Right Reserved</p>
+        <ul>
+          <li><a href="#">PRIVACY POLICY</a></li>
+          <li><a href="#">TERMS OF SERVICES</a></li>
+          <li><a href="#">CODE OF CONDUCTS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- end container 6 -->
+  <script src="index.js" charset="utf-8"></script>
+  <script src="https://kit.fontawesome.com/befd39a0fc.js" crossorigin="anonymous"></script>
+  </body>
+</html>
